@@ -1,0 +1,28 @@
+﻿<Window x:Class="ArtNeuralNetwork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArtNeuralNetwork"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="682" Width="840">
+    <Grid>
+        <TextBox x:Name="InputTextbox" HorizontalAlignment="Center" Margin="0,56,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="522"/>
+        <Label Content="Explain what art the AI needs to create" HorizontalAlignment="Left" Margin="159,25,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="AIImagesResult" Height="500" Width="500" Margin="170,111,170,55" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="GetAIResultButton" Content="Process" HorizontalAlignment="Right" Margin="0,55,111,0" VerticalAlignment="Top" Click="GetAIResultButton_Click"/>
+        <Label x:Name="progressLabel" Content="progressLabel" HorizontalAlignment="Center" Margin="0,74,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="RetrainButton" Content="Retrain" HorizontalAlignment="Right" Margin="0,55,65,0" VerticalAlignment="Top" Click="RetrainButton_Click"/>
+        <Label x:Name="totalCountLabel" Content="/ TotalCount" HorizontalAlignment="Right" Margin="0,97,68,0" VerticalAlignment="Top"/>
+        <Label x:Name="CountLabel" Content="0" HorizontalAlignment="Right" Margin="0,97,138,0" VerticalAlignment="Top" Width="45" HorizontalContentAlignment="Right"/>
+        <Label x:Name="ErrorCountLabel" Content="0" HorizontalAlignment="Right" Margin="0,119,138,0" VerticalAlignment="Top" Width="45" HorizontalContentAlignment="Right"/>
+        <Label x:Name="errorCount" Content="Errors" HorizontalAlignment="Right" Margin="0,119,68,0" VerticalAlignment="Top"/>
+        <Button x:Name="MutateButton" Content="Mutate" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Click="MutateButton_Click"/>
+        <TextBox x:Name="mutateWeightInput" HorizontalAlignment="Right" Margin="0,0,10,35" Text="0,5" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="42"/>
+        <Button x:Name="LoadAIButton" Content="Load" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="44" Height="20" Click="LoadAIButton_Click"/>
+        <Button x:Name="SaveAIButton" Content="Save" HorizontalAlignment="Left" Margin="65,0,0,10" VerticalAlignment="Bottom" Width="44" Height="20" Click="SaveAIButton_Click"/>
+        <Button x:Name="TrainButton" Content="Train" HorizontalAlignment="Right" Margin="0,30,65,0" VerticalAlignment="Top" Height="20" Width="41" Click="TrainButton_Click"/>
+        <Button x:Name="RecordFramesButton" Content="Record" HorizontalAlignment="Right" Margin="0,0,101,10" VerticalAlignment="Bottom" Click="RecordFramesButton_Click"/>
+
+    </Grid>
+</Window>

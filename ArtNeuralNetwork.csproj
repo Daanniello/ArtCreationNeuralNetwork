@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="OldTrainingData\**" />
+    <EmbeddedResource Remove="OldTrainingData\**" />
+    <None Remove="OldTrainingData\**" />
+    <Page Remove="OldTrainingData\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AI_Saves\" />
+    <Folder Include="RecordingTemp\" />
+    <Folder Include="TrainingData\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>
